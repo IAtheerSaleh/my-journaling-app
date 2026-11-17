@@ -61,7 +61,7 @@ struct ContentView: View {
 
                 } label: {
 
-                    Image(systemName: "line.3.horizontal")
+                    Image(systemName: "line.3.horizontal.decrease")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
                         .frame(width: 55, height: 60)
@@ -98,7 +98,7 @@ struct ContentView: View {
 
                     VStack(spacing: 20) {
 
-                        Image("EmptyJournal")
+                        Image("mainPic")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 210, height: 170)
@@ -344,4 +344,7 @@ struct ContentView: View {
             Text("Are you sure you want to delete this journal?")
         }
     }
+}
+#Preview{
+    ContentView()
 }

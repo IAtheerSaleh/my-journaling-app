@@ -11,7 +11,10 @@
     ],
   },
   "files": [
+    { "path": "APPICON.icon", "target-membership": [ "my journaling app/resources" ] },
     { "kind": "folder", "path": "my journaling app", "target-membership": [ "my journaling app" ] },
+    { "kind": "folder", "path": "App", "target-membership": [ "my journaling app" ] },
+    { "kind": "folder", "path": "View", "target-membership": [ "my journaling app" ] },
     {
       "kind": "group",
       "name": "Products",
@@ -19,6 +22,8 @@
         { "path": "<PRODUCTS>/my journaling app.app", "id": "000000000000000000000120", "type": "wrapper.application", "index": false },
       ],
     },
+    { "kind": "folder", "path": "Model", "target-membership": [ "my journaling app" ] },
+    { "kind": "folder", "path": "viewModel", "target-membership": [ "my journaling app" ] },
   ],
   "targets": [
     {
@@ -32,6 +37,7 @@
         "resources",
       ],
       "build-settings": {
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "APPICON",
         "CODE_SIGN_STYLE": "Automatic",
         "CURRENT_PROJECT_VERSION": "1",
         "ENABLE_APP_SANDBOX": "YES",
